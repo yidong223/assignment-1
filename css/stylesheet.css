@@ -129,3 +129,36 @@ button[title="Cancel"] {
 .bottom-buttons > button {
     width: 6em;
 }
+
+.text-box {
+    display: flex;
+    justify-content: center;
+    grid-row: 2/3;
+    height: 100%;
+}
+
+textarea {
+    width: 75%;
+    height: 85%;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        display: block;
+    }
+
+    main {
+        padding-bottom: 100px;
+    }
+
+    .bottom-buttons {
+        padding-top: 100px;
+    }
+    
+    header {
+        background-color: #f2e9de;
+        grid-row: 1/2;
+        margin: -20px;
+    }
+}
