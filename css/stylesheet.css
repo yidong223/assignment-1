@@ -8,7 +8,7 @@ body {
     color: #56949f;
 }
 
-header, footer, footer > h2 {
+header, footer, footer > h2, .bottom-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,3 +79,53 @@ main {
     margin: -9px;
 }
 
+button {
+    color: white;
+    height: 2em;
+    margin: 1em;
+}
+
+button[title="New Note"], button[title="Save"] {
+    background-color: #56949f;
+    font-size: 16px;
+    border-radius: 12px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+}
+
+button[title="Dark Theme"] {
+    background-color: #575279;
+    font-size: 16px;
+    border-radius: 12px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+button[title="Cancel"] {
+    background-color: #b4637a;
+    font-size: 16px;
+    border-radius: 12px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.top-buttons {
+    grid-row: 1/2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-buttons > button {
+    width: 8em;
+}
+
+.bottom-buttons {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    justify-content: flex-end;
+}
+
+.bottom-buttons > button {
+    width: 6em;
+}
